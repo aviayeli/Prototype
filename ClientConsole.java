@@ -74,6 +74,8 @@ public class ClientConsole implements ChatIF
       while (true) 
       {
         message = fromConsole.readLine();
+        if (message.equals("send"))
+        	message=("Avi Ayeli 300228160 avi.ayeli@gmail.com ; Daniel Katz 305385577 danielkatz23@gmail.com");
         client.handleMessageFromClientUI(message);
       }
     } 
